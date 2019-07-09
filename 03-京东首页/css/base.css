@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100px;
+}
+body {
+    font: 12px/100% '微软雅黑';
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: red;
+}
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

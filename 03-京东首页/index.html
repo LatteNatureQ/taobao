@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="jd-layout">
+        <!-- 京东的头部 -->
+        <div class="jd-header">
+            <form class="left" action="">
+                <input type="search" placeholder="格兰仕 微波炉">
+            </form>
+            <a class="left" href="#">登录</a>
+        </div>
+        <!-- banner -->
+        <div class="jd-banner">
+            <img src="./images/pic.jpg" alt="">
+        </div>
+        <!-- 导航 -->
+        <div class="jd-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/nav0.png" alt="">
+                        <p>分类查询</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        setFont()
+
+        function setFont() {
+            var width = document.documentElement.clientWidth || document.body.clientWidth
+            // 375/100 = 当前屏幕/当前根标签字体大小
+            // 3.75 = width / 当前根标签字体大小
+            // 当前根标签字体大小 = width/3.75
+            document.querySelector('html').style.fontSize = width / 3.75 + 'px'
+        }
+        document.body.onresize = function () {
+            setFont()
+        }
+    </script>
+</body>
+
+</html>
